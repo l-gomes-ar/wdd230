@@ -2,6 +2,7 @@
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 1fr;
         gap: 1rem;
     }
 
@@ -16,5 +17,10 @@
     .card {
         margin: 0;
         box-shadow: 1px 1px 10px black;
+    }
+
+    .card ul,
+    .card p {
+        font-size: 1.25rem;
     }
 }

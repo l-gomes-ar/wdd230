@@ -16,12 +16,11 @@ header {
     gap: 1rem;
 }
 
-main {
-    font-size: 1rem;
-}
-
 body {
     font-family: "Kode Mono", monospace;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
 }
 
 nav,
@@ -67,7 +66,8 @@ nav a:hover {
 }
 
 main {
-    margin: 1rem auto;
+    font-size: 1rem;
+    margin: 2rem auto;
     max-width: 95vw;
 }
 
