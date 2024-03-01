@@ -1,0 +1,13 @@
+@media screen and (min-width: 1000px) {
+    #desktop-img {
+        width: 40vw;
+    }
+
+    #mobile-img {
+        width: 20vw;
+    }
+
+    main {
+        max-width: 60vw;
+    }
+}
