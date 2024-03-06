@@ -18,9 +18,6 @@ header {
 
 body {
     font-family: "Kode Mono", monospace;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
 }
 
 nav,
@@ -72,6 +69,7 @@ main {
 }
 
 h1 {
+    margin: 0;
     border-bottom: 1px solid black;
 }
 
