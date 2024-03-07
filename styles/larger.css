@@ -6,6 +6,14 @@
         gap: 1rem;
     }
 
+    #menuBtn {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+    }
+
     body {
         min-height: 100vh;
         display: grid;
