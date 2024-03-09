@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #7CA4B6;
+    --secondary-color: #164387;
+    --accent1-color: #912222;
+    --accent2-color: #C79F72;
+
+    --heading-font: "Rosarivo", cursive;
+    --paragraph-font: "Open Sans", sans-serif;
+
+    --nav-bg-color: var(--primary-color);
+    --nav-hover-bg-color: rgba(255, 255, 255, .2);
+}
