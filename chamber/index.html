@@ -6,29 +6,112 @@
     <title>Wembley Chamber of Commerce</title>
     <meta name="description" content="Wembley Chamber of Commerce, a WDD 230 project website.">
     <meta name="author" content="Lucas Gomes Araujo">
-    <link rel="icon" href="favicon.ico">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://l-gomes-ar.github.io/wdd230/chamber/">
     <meta property="og:title" content="Wembley Chamber of Commerce">
     <meta property="og:image" content="images/">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rosarivo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <header><h1>Wembley Chamber of Commerce</h1></header>
-    <nav></nav>
+    <header>
+        <img src="images/logo.webp" alt="Wembley Chamber of Commerce Logo" width="100" height="100">
+        <h1>Wembley <span>Chamber of Commerce</span></h1>
+        <button id="menuBtn">☰</button>
+    </header>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="#">Discover</a>
+        <a href="#">Directory</a>
+        <a href="#">Join</a>
+    </nav>
     <main>
-        <img src="" alt="" id="hero">
-        <section>A call to action link: <a href="">Call to Action</a></section>
-        <section id="current-event"></section>
-        <section id="weather-card"></section>
-        <section id="spotlights"></section>
+        <div id="hero-container">
+            <img src="images/hero.webp" alt="Wembley Stadium Entrance" id="hero">
+            <a href="#" id="call-action">Join the Chamber</a>
+        </div>
+        <div class="grid-container">
+            <section id="current-events">
+                <h2>Current Events</h2>
+                <h3>Placeholder information</h3>
+                <p>placeholder info on event</p>
+                <p>Location and time of event</p>
+                <a href="#">more info...</a>
+            </section>
+            <section id="weather-card">
+                <h2>Weather</h2>
+                <p>Placeholder Information</p>
+                <p>Placeholder Information</p>
+                <p>Wembley - London, England - UK</p>
+            </section>
+        </div>
+        <section id="spotlights">
+            <h2>Spotlights</h2>
+            <div class="flex-container">
+                <section>
+                    <h3>Member Spotlight 1</h3>
+                    <p>Slogan 1</p>
+                    <p>email</p>
+                    <p>telephone number</p>
+                    <p>Website</p>
+                </section>
+                <section>
+                    <h3>Member Spotlight 2</h3>
+                    <p>Slogan 2</p>
+                    <p>email</p>
+                    <p>telephone number</p>
+                    <p>Website</p>
+                </section>
+                <section>
+                    <h3>Member Spotlight 3</h3>
+                    <p>Slogan 3</p>
+                    <p>email</p>
+                    <p>telephone number</p>
+                    <p>Website</p>
+                </section>
+                <section>
+                    <h3>Member Spotlight 4</h3>
+                    <p>Slogan 4</p>
+                    <p>email</p>
+                    <p>telephone number</p>
+                    <p>Website</p>
+                </section>
+                <section>
+                    <h3>Member Spotlight 5</h3>
+                    <p>Slogan 5</p>
+                    <p>email</p>
+                    <p>telephone number</p>
+                    <p>Website</p>
+                </section>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>Contact Information</p>
-        <p>&copy;<span id="year"></span> .:|:. Lucas Gomes Araujo .:|:. WDD 230 Project</p>
-        <p id="lastModified"></p>
+        <div id="contact-information">
+            <div id="address-info">
+                <img src="images/logo.webp" alt="Wembley Chamber of Commerce Logo" width="150" height="150">
+                <div>
+                    <p>Wembley Chamber of Commerce</p>
+                    <p>Address</p>
+                </div>
+            </div>
+            <div id="contact-info">
+                <p>email</p>
+                <p>telephone</p>
+                <p>directions map</p>
+            </div>
+        </div>
+        <div id="footer-information">
+            <p>&copy;<span id="year"></span> Wembley Chamber</p>
+            <p>Lucas Gomes Araujo </p>
+            <p>WDD 230 Project</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>

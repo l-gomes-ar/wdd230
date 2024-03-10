@@ -1,0 +1,57 @@
+@media screen and (min-width: 770px) {
+    #menuBtn {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    #hero-container {
+        position: relative;
+        width: 75vw;
+        margin: 0 auto;
+    }
+
+    #call-action {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        width: 25vw;
+    }
+
+    #hero {
+        width: 100%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #footer-information p {
+        display: inline;
+        font-size: 12pt;
+        font-weight: normal;
+    }
+    
+    #footer-information p::after {
+        content: " |";
+    }
+
+    #footer-information p:last-child::after {
+        content: "";
+    }
+}

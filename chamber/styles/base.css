@@ -9,4 +9,188 @@
 
     --nav-bg-color: var(--primary-color);
     --nav-hover-bg-color: rgba(255, 255, 255, .2);
+    --nav-active-bg-color: rgba(0, 0, 0, .3);
+}
+
+body {
+    font-family: var(--paragraph-font);
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    margin: .5rem;
+}
+
+header button {
+    font-weight: bold;
+    background-color: var(--accent2-color);
+    border: 1px solid black;
+    margin: .5rem;
+    width: 44px;
+    height: 44px;
+}
+
+nav {
+    display: none;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+nav .active {
+    font-weight: bold;
+    color: yellow;
+    background-color: var(--nav-active-bg-color);
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-bg-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 22pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+h3 {
+    font-size: 16pt;
+}
+
+h1 span {
+    font-size: 14pt;
+    display: block;
+}
+
+main {
+    max-width: 95vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#hero {
+    margin: 1rem 0;
+    max-width: 95vw;
+}
+
+#call-action {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: white;
+    background-color:rgba(145, 34, 34, .9);
+    border-radius: .5rem;
+    width: 50vw;
+}
+
+#current-events,
+#weather-card {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+#current-events h2,
+#weather-card h2 {
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+#current-events a {
+    display: block;
+    font-size: 10pt;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: yellow;
+}
+
+#spotlights section {
+    background-color: #C79F72;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#spotlights h3 {
+    text-align: left;
+}
+
+#spotlights section p:nth-child(2) {
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+#address-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    font-style: italic;
+}
+
+#address-info p:nth-child(1){
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+#contact-info {
+    padding: 1rem;
+}
+
+#contact-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+#footer-information {
+    color: yellow;
+    line-height: 1.5rem;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 1rem;
+}
+
+div[id="footer-information"] p:nth-child(2) {
+    font-weight: bold;
+    font-size: 14pt;
 }
