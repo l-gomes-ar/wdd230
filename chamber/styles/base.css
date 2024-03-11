@@ -150,6 +150,7 @@ main {
 
 #spotlights section p:nth-child(2) {
     text-align: right;
+    margin-bottom: 2rem;
 }
 
 footer {
