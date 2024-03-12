@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Lucas Gomes Araujo Profile" width="75" height="100">
+        <img src="images/profile.webp" alt="Lucas Gomes Araujo Profile" width="75" height="100" id="profile">
         <span>Lucas Gomes Araujo</span>
         <img src="images/dark-theme-button.svg" alt="Dark Theme Button" id="darkBtn">
     </header>
@@ -32,6 +32,15 @@
         <a href="#">Form</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 608px)" srcset="images/hero-small.webp">
+                <img src="images/hero-large.webp" alt="Hero Image, London England Temple" width="960" height="700">
+            </picture>
+            <div class="hero-label">
+                <p>Rome Italy Temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
@@ -45,15 +54,15 @@
                 <li>
                     Week 02:
                     <a href="week02/design.html">Design</a> |
-                    <a href="https://codepen.io/l-gomes-ar/pen/PogqMVw">Responsive Navigation</a> |
-                    <a href="week02/bom.html">DOM Manipulation</a>
+                    <a href="https://codepen.io/l-gomes-ar/pen/PogqMVw">Responsive</a> |
+                    <a href="week02/bom.html">DOM</a>
                 </li>
                 <li>
                     Week 03:
                     <a href="week03/images/landscape.webp">WebP</a> |
-                    <a href="week03/lazyload.html">Lazy Load Demonstration</a> |
-                    <a href="week03/responsive-images.html">Responsive Images</a> |
-                    <a href="week03/bom.html">Local Storage API</a>
+                    <a href="week03/lazyload.html">LazyLoad</a> |
+                    <a href="week03/responsive-images.html">Srcset</a> |
+                    <a href="week03/bom.html">LocalStorage</a>
                 </li>
                 <li>
                     Week 04:
@@ -66,11 +75,12 @@
                 </li>
             </ul>
         </section>
-        <section class="card">
+        <section class="card information">
             <h2>Information</h2>
             <p>Information about the weather placeholder</p>
-            <p>Number of visits to the page placeholder</p>
+            <p>Visit Count: <span id="numberVisits"></span></p>
         </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19845.827545445616!2d-0.3192934153271697!3d51.55487833016652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1710278340385!5m2!1sen!2suk" width="960" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> .:|:. Lucas Gomes Araujo .:|:. England, United Kingdom</p>
@@ -79,5 +89,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/getInformationDetails.js"></script>
 </body>
 </html>
