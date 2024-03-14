@@ -92,19 +92,13 @@ h1 span {
 }
 
 main {
-    max-width: 95vw;
+    max-width: 310px;
     margin: 0 auto;
     text-align: center;
 }
 
-#hero {
-    margin: 1rem 0;
-    max-width: 95vw;
-}
-
 #call-action {
     display: block;
-    margin: 0 auto;
     padding: 1rem;
     text-decoration: none;
     font-family: var(--heading-font);
@@ -112,7 +106,10 @@ main {
     color: white;
     background-color:rgba(145, 34, 34, .9);
     border-radius: .5rem;
-    width: 50vw;
+    width: 250px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 }
 
 #current-events,
@@ -194,4 +191,15 @@ footer {
 div[id="footer-information"] p:nth-child(2) {
     font-weight: bold;
     font-size: 14pt;
+}
+
+.hero-container img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
 }
