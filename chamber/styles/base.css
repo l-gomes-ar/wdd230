@@ -69,7 +69,8 @@ nav a:hover {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: var(--heading-font);
     font-weight: bold;
 }
@@ -84,6 +85,10 @@ h2 {
 
 h3 {
     font-size: 16pt;
+}
+
+h4 {
+    font-size: 14pt;
 }
 
 h1 span {
@@ -112,8 +117,8 @@ main {
     left: 1rem;
 }
 
-#current-events,
-#weather-card {
+section[id="current-events"],
+section[id="weather-card"] {
     background-color: var(--secondary-color);
     color: white;
     padding: 1rem;
@@ -153,6 +158,17 @@ main {
 footer {
     text-align: center;
     padding: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: yellow;
 }
 
 #address-info {
@@ -201,5 +217,46 @@ div[id="footer-information"] p:nth-child(2) {
 .hero-container {
     position: relative;
     width: 100%;
+    margin: 1rem 0;
+}
+
+.images {
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.images img {
+    margin: .5rem 0;
+    width: 260px;
+    height: auto;
+}
+
+aside section {
+    text-align: left;
+    padding: 1rem;
+    margin: 0 0 .5rem;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+aside h2 {
+    text-align: left;
+    font-size: 14pt;
+    background-color: var(--accent1-color);
+    color: white;
+    display: block;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
+
+aside h4 {
+    margin-top: 1rem;
+}
+
+aside p {
+    padding: .5rem;
+}
+
+.grid-container-directory {
     margin: 1rem 0;
 }

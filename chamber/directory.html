@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wembley Chamber of Commerce</title>
+    <meta name="description" content="Wembley Chamber of Commerce, a WDD 230 project website.">
+    <meta name="author" content="Lucas Gomes Araujo">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://l-gomes-ar.github.io/wdd230/chamber/">
+    <meta property="og:title" content="Wembley Chamber of Commerce">
+    <meta property="og:image" content="https://l-gomes-ar.github.io/wdd230/chamber/images/logo.webp">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rosarivo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Wembley Chamber of Commerce Logo" width="100" height="100">
+        <h1>Wembley <span>Chamber of Commerce</span></h1>
+        <button id="menuBtn">☰</button>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Discover</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="#">Join</a>
+    </nav>
+    <main>
+        <div class="grid-container-directory">
+            <aside>
+                <h2 id="message"></h2>
+                <section>
+                    <h3>Demographics</h3>
+                    <h4>Diversity</h4>
+                    <p>Wembley is one of London's most diverse neighborhoods, with residents hailing from India, the Caribbean, Eastern Europe, and numerous other countries.</p>
+                    <h4>Age Ranges</h4>
+                    <p>Wembley offers a mix of young professionals, families, and established residents.</p>
+                    <h4>Socio-Economic Factors</h4>
+                    <p>Offering a mix of affordable living options and more upscale neighborhoods, Wembley attracts a diverse range of residents.</p>
+                </section>
+                <section>
+                    <h3>Attractions in Wembley</h3>
+                    <h4>Wembley Stadium</h4>
+                    <p>Wembley Stadium is a legendary venue and a symbol of English sporting and entertainment excellence. Its iconic arch is recognizable across London. The stadium hosts major football events like the FA Cup Final and England national matches, along with world-class concerts and diverse sporting competitions.</p>
+                    <h4>OVO Arena Wembley</h4>
+                    <p>World-renowned indoor venue that hosts a thrilling array of events. From blockbuster concerts with the biggest stars in music to hilarious standup comedy shows, sporting competitions, and family-friendly entertainment, Wembley Arena offers a dynamic calendar for all tastes.</p>
+                    <h4>London Designer Outlet</h4>
+                    <p>Located just steps away from Wembley Stadium, the London Designer Outlet is a haven for savvy shoppers. Find your favorite designer brands at irresistible prices, with discounts of up to 70% off regular retail. The outlet mall offers a wide selection of fashion, sportswear, homeware, and accessories, ensuring there's something for everyone. Whether you're looking to refresh your wardrobe or seeking unique gifts, the London Designer Outlet is the perfect place to indulge in a shopping spree without breaking the bank.</p>
+                </section>
+            </aside>
+            <div class="images">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 910px)" srcset="images/wembley-stadium-small.webp">
+                        <img src="images/wembley-stadium.webp" alt="Wembley Stadium" width="550" height="300" loading="lazy">
+                    </picture>
+                    <figcaption>Wembley Stadium. By <a href="//commons.wikimedia.org/wiki/User:Arne_M%C3%BCseler" title="User:Arne Müseler">Arne Müseler</a> / www.arne-mueseler.com, <a href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en" title="Creative Commons Attribution-Share Alike 3.0 de">CC BY-SA 3.0 de</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=124374006">Link</a></figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 910px)" srcset="images/stadium-interior-small.webp">
+                        <img src="images/stadium-interior.webp" alt="Wembley Stadium Interior" width="550" height="300" loading="lazy">
+                    </picture>
+                    <figcaption>Wembley Stadium Interior. By Jbmg40 - Own work, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=4268970">Link</a></figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 910px)" srcset="images/arena-small.webp">
+                        <img src="images/arena.webp" alt="OVO Wembley Arena" width="550" height="300" loading="lazy">
+                    </picture>
+                    <figcaption>Wembley Arena. By <a href="https://en.wikipedia.org/wiki/User:Pmsphoto" class="extiw" title="en:User:Pmsphoto">Pmsphoto</a> at <a class="external text" href="https://en.wikipedia.org">en.wikipedia</a>, <a href="https://creativecommons.org/licenses/by/2.5" title="Creative Commons Attribution 2.5">CC BY 2.5</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=5188334">Link</a></figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 910px)" srcset="images/outlet-small.webp">
+                        <img src="images/outlet.webp" alt="London Designer Outlet Eastern Entrnace" width="550" height="300" loading="lazy">
+                    </picture>
+                    <figcaption>London Designer Outlet. By <a href="https://commons.wikimedia.org/wiki/File:London_Designer_Outlet_eastern_entrance.jpg">CastleCapt</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 910px)" srcset="images/outlet-inside-small.webp">
+                        <img src="images/outlet-inside.webp" alt="London Designer Outlet Inside Picture" width="550" height="300" loading="lazy">
+                    </picture>
+                    <figcaption>London Designer Outlet Inside. By <a href="https://commons.wikimedia.org/wiki/File:LDO_inside.jpg">EG Focus</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 910px)" srcset="images/stadium-outside-small.webp">
+                        <img src="images/stadium-outside.webp" alt="London Designer Outlet Inside Picture" width="550" height="300" loading="lazy">
+                    </picture>
+                    <figcaption>Wembley Stadium from Wembley Walk. By <a href="https://commons.wikimedia.org/wiki/File:Wembley_Stadium_from_Wembley_Walk_-_geograph.org.uk_-_3304960.jpg">Wembley Stadium from Wembley Walk by J WILLIAMS</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>, via Wikimedia Commons</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="contact-information">
+            <div id="address-info">
+                <img src="images/logo.webp" alt="Wembley Chamber of Commerce Logo" width="150" height="150">
+                <div>
+                    <p>Wembley Chamber of Commerce</p>
+                    <p>000 High Road, Wembley HA9 0XX</p>
+                </div>
+            </div>
+            <div id="contact-info">
+                <p>WembleyChamber@commerce.com</p>
+                <p>+44 7900 000000</p>
+                <p>Directions: <a href="https://www.google.com/maps/dir//Wembley/@51.5548462,-0.3398933,13z/data=!4m18!1m8!3m7!1s0x4876116207a6d0bd:0xaf7016a2cadb21e4!2sWembley!3b1!8m2!3d51.550501!4d-0.3048409!16zL20vMG5jdGg!4m8!1m0!1m5!1m1!1s0x4876116207a6d0bd:0xaf7016a2cadb21e4!2m2!1d-0.3048409!2d51.550501!3e3?entry=ttu">Google Maps</a></p>
+            </div>
+        </div>
+        <div id="footer-information">
+            <p>&copy;<span id="year"></span> Wembley Chamber</p>
+            <p>Lucas Gomes Araujo </p>
+            <p>WDD 230 Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/getLastVisited.js"></script>
+</body>
+</html>
