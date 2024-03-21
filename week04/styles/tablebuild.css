@@ -51,7 +51,7 @@ caption {
 }
 
 th[scope="colgroup"],
-thead th:first-child {
+thead td:first-child {
     font-size: 24pt;
     background-color: black;
     color: white;
