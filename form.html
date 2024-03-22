@@ -39,8 +39,8 @@
                 <fieldset>
                     <legend>User Details</legend>
                     <label>Username:<input type="text" id="username" name="username" required autofocus></label>
-                    <label>Password:<input type="password" id="password" name="password" required pattern="[a-zA-Z]{8,}" title="Password must be at least eight (8) characters long and alpha-numeric."></label>
-                    <label>Re-Enter Password:<input type="password" id="passwordConfirmation" name="passwordConfirmation" pattern="[a-zA-Z]{8,}" required></label>
+                    <label>Password:<input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least eight (8) characters long and alpha-numeric."></label>
+                    <label>Re-Enter Password:<input type="password" id="passwordConfirmation" name="passwordConfirmation" pattern="[a-zA-Z0-9]{8,}" required></label>
                     <div id="feedback"></div>
                     <label>Email:<input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
                 </fieldset>
