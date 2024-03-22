@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucas Gomes Araujo - WDD 230 - Web Frontend Development | Form</title>
+    <meta name="description" content="Lucas Gomes Araujo's 'WDD 230 - Web Frontend Development' course assignment form page.">
+    <meta name="author" content="Lucas Gomes Araujo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Lucas Gomes Araujo - WDD 230 - Web Frontend Development | Form">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.pexels.com/photos/220887/pexels-photo-220887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <meta property="og:url" content="https://l-gomes-ar.github.io/wdd230/form.html">
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Lucas Gomes Araujo Profile" width="75" height="100" id="profile">
+        <span>Lucas Gomes Araujo</span>
+        <img src="images/dark-theme-button.svg" alt="Dark Theme Button" id="darkBtn">
+    </header>
+    <nav>
+        <span id="menuBtn"></span>
+        <a href="index.html">Home</a>
+        <a href="chamber/">Chamber</a>
+        <a href="week01/chamber-site-plan.html">Site Plan</a>
+        <a href="form.html" class="active">Form</a>
+    </nav>
+    <main>
+        <h1>WDD 230: Web Frontend Development - Form</h1>
+        <section class="card form">
+            <form action="record.html" method="get">
+                <fieldset>
+                    <legend>User Details</legend>
+                    <label>Username:<input type="text" id="username" name="username" required autofocus></label>
+                    <label>Password:<input type="password" id="password" name="password" required pattern="[a-zA-Z]{8,}" title="Password must be at least eight (8) characters long and alpha-numeric."></label>
+                    <label>Re-Enter Password:<input type="password" id="passwordConfirmation" name="passwordConfirmation" pattern="[a-zA-Z]{8,}" required></label>
+                    <div id="feedback"></div>
+                    <label>Email:<input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Rating</legend>
+                    <div id="rangeValue">1</div>
+                    <label>Page Rating:<input type="range" name="pageRating" id="pageRating" value="0" step="1" min="1" max="10" list="rangevalues"></label>
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </fieldset>
+                <input type="submit" value="Send Your Page Rate">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> .:|:. Lucas Gomes Araujo .:|:. England, United Kingdom</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

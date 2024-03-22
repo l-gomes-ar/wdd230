@@ -1,0 +1,11 @@
+main {
+    height: 100vh;
+}
+
+main p {
+    font-size: 24pt;
+    color: red;
+    font-weight: 700;
+    grid-column: 1 / 3;
+    margin-left: 1rem;
+}

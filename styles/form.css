@@ -1,0 +1,111 @@
+:root {
+    --invalid: red;
+    --valid: green;
+    --font-color: rgb(0, 50, 107);
+}
+
+#feedback {
+    color: var(--invalid);
+}
+
+#rangevalues {
+	display: flex;
+    justify-content: space-between;
+	margin-left: .8rem;
+}
+
+#rangeValue {
+    margin-left: .3rem;
+    font-weight: 700;
+}
+
+.form {
+    grid-column: 1 / 3;
+}
+
+form {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+fieldset {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    padding: 0 .3rem;
+    font-size: 18pt;
+}
+
+legend,
+label {
+    color: var(--font-color);
+    font-weight: 700;
+}
+
+.dark legend,
+.dark label {
+    color: white;
+}
+
+input:not(input[type="submit"]),
+label {
+    display: block;
+    line-height: 44px;
+    width: 100%;
+    padding: 0 .3rem;
+}
+
+option {
+    margin-top: .7rem;
+    font-size: 16pt;
+}
+
+
+input:not(input[type="range"]):not(input[type="submit"]) {
+    margin: .1rem 0 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.dark input:not(input[type="range"]):not(input[type="submit"]) {
+    border: 1px solid white;
+}
+
+input:not(input[type="range"]):not(input[type="submit"]):invalid {
+    border-right: 10px solid var(--invalid);
+}
+
+input:not(input[type="range"]):not(input[type="submit"]):valid {
+    border-right: 10px solid var(--valid);
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 44px;
+    padding: 0 10px;
+    font-weight: 700;
+    background-image: linear-gradient(rgb(52, 99, 138), rgb(0, 77, 139));
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+    cursor: pointer;
+    color: white;
+}
+
+#feedback {
+    margin-left: .3rem;
+}
+
+.dark input:not(input[type="submit"]) {
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+.dark input[type="submit"] {
+    background-image: linear-gradient(rgb(32, 32, 32), rgb(24, 24, 24));
+}
