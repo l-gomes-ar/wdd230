@@ -70,7 +70,9 @@ nav a:hover {
 h1,
 h2,
 h3,
-h4 {
+h4,
+legend,
+label {
     font-family: var(--heading-font);
     font-weight: bold;
 }
@@ -83,11 +85,13 @@ h2 {
     font-size: 18pt;
 }
 
-h3 {
+h3,
+legend {
     font-size: 16pt;
 }
 
-h4 {
+h4,
+label {
     font-size: 14pt;
 }
 
@@ -259,4 +263,28 @@ aside p {
 
 .grid-container-directory {
     margin: 1rem 0;
+}
+
+form {
+    text-align: left;
+    padding: 1rem;
+}
+
+fieldset {
+    padding: 1rem;
+    border: 1px solid #164387;
+    margin-bottom: 1rem;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input {
+    margin: .3rem 0 1.5rem;
+    font-size: 1rem;
+    height: 40px;
 }

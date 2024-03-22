@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wembley Chamber of Commerce</title>
-    <meta name="description" content="Wembley Chamber of Commerce, a WDD 230 project website.">
+    <title>Join | Wembley Chamber of Commerce</title>
+    <meta name="description" content="Wembley Chamber of Commerce, a WDD 230 project website. Join Page.">
     <meta name="author" content="Lucas Gomes Araujo">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://l-gomes-ar.github.io/wdd230/chamber/">
-    <meta property="og:title" content="Wembley Chamber of Commerce">
+    <meta property="og:url" content="https://l-gomes-ar.github.io/wdd230/chamber/join.html">
+    <meta property="og:title" content="Join | Wembley Chamber of Commerce">
     <meta property="og:image" content="https://l-gomes-ar.github.io/wdd230/chamber/images/logo.webp">
     <link rel="icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rosarivo&display=swap" rel="stylesheet">
@@ -23,60 +23,31 @@
         <button id="menuBtn">☰</button>
     </header>
     <nav>
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="discover.html">Discover</a>
         <a href="#">Directory</a>
-        <a href="join.html">Join</a>
+        <a href="join.html" class="active">Join</a>
     </nav>
     <main>
-        <div class="grid-container">
-            <div class="hero-container">
-                <picture>
-                    <source media="(max-width: 910px)" srcset="images/hero-small.webp">
-                    <img src="images/hero.webp" alt="Wembley Stadium Entrance" width="947" height="497">
-                </picture>
-                <a href="join.html" id="call-action">Join the Chamber</a>
-            </div>
-            <section id="current-events">
-                <h2>Current Events</h2>
-                <h3>Placeholder information</h3>
-                <p>placeholder info on event</p>
-                <p>Location and time of event</p>
-                <a href="#">more info...</a>
-            </section>
-            <section id="weather-card">
-                <h2>Weather</h2>
-                <p>Placeholder Information</p>
-                <p>Placeholder Information</p>
-                <p>Wembley - London, England - UK</p>
-            </section>
-        </div>
-        <section id="spotlights">
-            <h2>Spotlights</h2>
-            <div class="flex-container">
-                <section>
-                    <h3>Member Spotlight 1</h3>
-                    <p>Slogan 1</p>
-                    <p>email</p>
-                    <p>telephone number</p>
-                    <p>Website</p>
-                </section>
-                <section>
-                    <h3>Member Spotlight 2</h3>
-                    <p>Slogan 2</p>
-                    <p>email</p>
-                    <p>telephone number</p>
-                    <p>Website</p>
-                </section>
-                <section>
-                    <h3>Member Spotlight 3</h3>
-                    <p>Slogan 3</p>
-                    <p>email</p>
-                    <p>telephone number</p>
-                    <p>Website</p>
-                </section>
-            </div>
-        </section>
+        <h1>Join Us</h1>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label>First Name:<input type="text" id="fname" name="fname" required></label>
+                <label>Last Name:<input type="text" id="lname" name="lname" required></label>
+                <label>Position:<input type="text" id="position" name="position" pattern="[a-zA-Z\s-]{7,}"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Email Address:<input type="email" name="email" id="email" placeholder="example@email.com"></label>
+                <label>Mobile Phone Number:<input type="telephone" id="telephone" name="telephone" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business/Organization's Name:<input type="text" name="business" id="business" required></label>
+                <label>Business/Organization's Description:<textarea name="description" id="description" cols="30" rows="10"></textarea></label>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <div id="contact-information">
@@ -102,5 +73,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/getLastVisited.js"></script>
 </body>
 </html>
