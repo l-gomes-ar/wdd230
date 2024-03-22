@@ -70,16 +70,22 @@ input:not(input[type="range"]):not(input[type="submit"]) {
     border-radius: 5px;
 }
 
-.dark input:not(input[type="range"]):not(input[type="submit"]) {
-    border: 1px solid white;
+input:not(input[type="range"]):not(input[type="submit"]):invalid {
+    border: 1px solid var(--invalid);
 }
 
-input:not(input[type="range"]):not(input[type="submit"]):invalid {
-    border-right: 10px solid var(--invalid);
+input:not(input[type="range"]):not(input[type="submit"]):invalid:focus {
+    border: 3px solid var(--invalid);
+    outline: none;
 }
 
 input:not(input[type="range"]):not(input[type="submit"]):valid {
-    border-right: 10px solid var(--valid);
+    border: 1px solid var(--valid);
+}
+
+input:not(input[type="range"]):not(input[type="submit"]):valid:focus {
+    border: 3px solid var(--valid);
+    outline: none;
 }
 
 input[type="submit"] {
