@@ -29,25 +29,78 @@
         <a href="join.html" class="active">Join</a>
     </nav>
     <main>
-        <h1>Join Us</h1>
-        <form action="thankyou.html" method="get">
-            <fieldset>
-                <legend>Personal Details</legend>
-                <label>First Name:<input type="text" id="fname" name="fname" required></label>
-                <label>Last Name:<input type="text" id="lname" name="lname" required></label>
-                <label>Position:<input type="text" id="position" name="position" pattern="[a-zA-Z\s-]{7,}"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label>Email Address:<input type="email" name="email" id="email" placeholder="example@email.com"></label>
-                <label>Mobile Phone Number:<input type="telephone" id="telephone" name="telephone" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Business Information</legend>
-                <label>Business/Organization's Name:<input type="text" name="business" id="business" required></label>
-                <label>Business/Organization's Description:<textarea name="description" id="description" cols="30" rows="10"></textarea></label>
-            </fieldset>
-        </form>
+        <h2 class="join-us">Join Us</h2>
+        <div class="grid-container">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label class="required">First Name:<input type="text" id="fname" name="fname" required></label>
+                    <label class="required">Last Name:<input type="text" id="lname" name="lname" required></label>
+                    <label>Position:<input type="text" id="position" name="position" pattern="[a-zA-Z\s-]{7,}"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="required">Email Address:<input type="email" name="email" id="email" placeholder="example@email.com"></label>
+                    <label class="required">Mobile Phone Number:<input type="tel" id="telephone" name="telephone" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="required">Business/Organization's Name:<input type="text" name="business" id="business" required></label>
+                    <label>Business/Organization's Description:<textarea name="description" id="description" cols="30" rows="10"></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend class="required">Membership Level</legend>
+                    <label>
+                        <input type="radio" value="np" name="membership" required> NP Membership
+                    </label>
+                    <label>
+                        <input type="radio" value="bronze" name="membership"> Bronze Membership
+                    </label>
+                    <label>
+                        <input type="radio" value="silver" name="membership"> Silver Membership
+                    </label>
+                    <label>
+                        <input type="radio" value="gold" name="membership"> Gold Membership
+                    </label>
+                </fieldset>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Join Our Chamber">
+            </form>
+            <div class="benefits">
+                <h3>Membership Benefits</h3>
+                <h4>NP Membership (Non-Profit)</h4>
+                <h5>Annual Fee: Free</h5>
+                <ul>
+                    <li>Access to basic member directory</li>
+                    <li>Eligibility for community event listings</li>
+                    <li>Subscription to Chamber e-newsletter</li>
+                </ul>
+                <h4>Bronze Membership</h4>
+                <h5>Annual Fee: £250</h5>
+                <ul>
+                    <li>All NP Membership benefits PLUS:</li>
+                    <li>Business profile in member directory</li>
+                    <li>Member discounts on select Chamber events</li>
+                    <li>Opportunity to submit articles for newsletter</li>
+                </ul>
+                <h4>Silver Membership</h4>
+                <h5>Annual Fee: £450</h5>
+                <ul>
+                    <li>All Bronze Membership benefits PLUS:</li>
+                    <li>Enhanced directory listing with website link</li>
+                    <li>One sponsored social media post per year</li>
+                    <li>Access to member-exclusive networking events</li>
+                </ul>
+                <h4>Gold Membership</h4>
+                <h5>Annual Fee: £750</h5>
+                <ul>
+                    <li>All Silver Membership benefits PLUS:</li>
+                    <li>Prominent logo placement on Chamber website</li>
+                    <li>Quarterly "member spotlight" feature</li>
+                    <li>Access to business development workshops</li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer>
         <div id="contact-information">
@@ -73,6 +126,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/getLastVisited.js"></script>
+    <script src="scripts/timestamp.js"></script>
 </body>
 </html>

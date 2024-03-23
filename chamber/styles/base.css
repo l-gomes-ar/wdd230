@@ -12,6 +12,10 @@
     --nav-active-bg-color: rgba(0, 0, 0, .3);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--paragraph-font);
 }
@@ -72,7 +76,8 @@ h2,
 h3,
 h4,
 legend,
-label {
+label,
+input[type="submit"] {
     font-family: var(--heading-font);
     font-weight: bold;
 }
@@ -81,7 +86,8 @@ h1 {
     font-size: 22pt;
 }
 
-h2 {
+h2,
+input[type="submit"] {
     font-size: 18pt;
 }
 
@@ -268,6 +274,9 @@ aside p {
 form {
     text-align: left;
     padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 3px;
+    margin-bottom: 1rem;
 }
 
 fieldset {
@@ -277,14 +286,88 @@ fieldset {
 }
 
 label,
-input,
+input:not(input[type="radio"]),
 textarea {
     display: block;
+}
+
+input:not(input[type="radio"]):not(input[type="submit"]),
+textarea {
+    margin: .3rem 0 1.5rem;
+    font-size: 1rem;
+    padding: .3rem;
     width: 100%;
 }
 
-input {
-    margin: .3rem 0 1.5rem;
-    font-size: 1rem;
-    height: 40px;
+textarea {
+    padding-top: .5rem;
+}
+
+input:not(input[type="radio"]):not(input[type="submit"]) {
+    height: 44px;
+}
+
+.required::before {
+    content: "*";
+    color: red;
+}
+
+.required input:valid:focus {
+    border: 2px solid green;
+    border-radius: 5px;
+    outline: none;
+}
+
+.required input:invalid:focus {
+    border: 2px solid red;
+    border-radius: 5px;
+    outline: none;
+}
+
+.join-us {
+    font-size: 28pt;
+    margin: 1.5rem 0 1rem;
+}
+
+input[type="submit"] {
+    background-color: var(--accent1-color);
+    color: white;
+    border: 0;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-image: linear-gradient(var(--accent1-color), var(--accent2-color));
+}
+
+legend {
+    text-align: center;
+}
+
+.benefits {
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    text-align: left;
+    height: fit-content;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.benefits ul {
+    padding: 1rem;
+    list-style: disc;
+    margin-bottom: 1rem;
+}
+
+.thankyou {
+    padding: 5rem;
+    background-color: var(--accent1-color);
+    color: white;
+    font-size: 20pt;
+    text-align: left;
+    margin-bottom: 100%;
+    border-radius: 10px;
 }
