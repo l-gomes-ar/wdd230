@@ -201,3 +201,10 @@ iframe  {
     text-align: center;
     font-weight: 700;
 }
+
+#weatherInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
