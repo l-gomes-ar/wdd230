@@ -1,0 +1,58 @@
+:root {
+    --heading-font: "Rakkas", serif;
+    --p-font: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+footer {
+    font-family: var(--heading-font);
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+h2 {
+    font-size: 22pt;
+}
+
+body {
+    font-family: var(--p-font);
+    text-align: center;
+}
+
+main {
+    margin: 1rem auto;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+#cards section {
+    background-color: lightblue;
+    padding: .8rem;
+    border-radius: 10px;
+}
+
+img {
+    box-shadow: 2px 3px 10px;
+    margin: 1rem 0;
+}
+
+header,
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
