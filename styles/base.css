@@ -202,6 +202,11 @@ iframe  {
     font-weight: 700;
 }
 
+section.dark img{
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 1.5rem;
+}
+
 #weatherInfo {
     display: flex;
     justify-content: center;
