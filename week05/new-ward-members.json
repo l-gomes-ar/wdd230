@@ -1,0 +1,23 @@
+{
+    "familyName": "Smith",
+    "dateMoved": "2024-03-26",
+    "numberPeople": 3,
+    "visited": true,
+    "familyMembers": [
+        {
+            "name": "John Smith",
+            "gender": "male",
+            "birthdate": "1999-10-01"
+        },
+        {
+            "name": "Ann Smith",
+            "gender": "female",
+            "birthdate": "1999-01-05"
+        },
+        {
+            "name": "Eliza Smith",
+            "gender": "female",
+            "birthdate": "2023-12-25"
+        }
+    ]
+}
