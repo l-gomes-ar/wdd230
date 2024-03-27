@@ -1,0 +1,53 @@
+{
+    "companies": [
+        {
+            "name": "Wembley Wellness Studio",
+            "address": "Unit 5, Wembley Retail Park, Engineers Way, HA9 0EG",
+            "phone": "020 8795 6677",
+            "description": "Find your inner balance with our range of yoga, Pilates, and mindfulness classes.",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "The Kitchen Corner",
+            "address": "25 Olympic Way, Wembley, HA9 0FJ",
+            "phone": "020 8900 1234",
+            "description": "Your one-stop shop for quality kitchenware and expert advice on creating delicious home-cooked meals.",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Brookside Accountants",
+            "address": "12 High Road, Wembley, HA9 7BH",
+            "phone": "020 8902 5445",
+            "description": "We take the stress out of tax season and offer year-round financial guidance for your peace of mind.",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Olympic Park Cafe",
+            "address": "2 Stadium Square, Wembley Park, HA9 0FA",
+            "phone": "020 8457 8895",
+            "description": "Enjoy freshly-brewed coffee, tasty treats, and a lively atmosphere overlooking the iconic Wembley Stadium arch.",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "The Print Place",
+            "address": "22 Empire Way, Wembley, HA9 0GB",
+            "phone": "020 8433 9281",
+            "description": "Offering affordable printing services, community workshops, and a space to let your creativity flourish.",
+            "membershipLevel": "NP Membership (Non-profit)"
+        },
+        {
+            "name": "Wembley Sports Gear",
+            "address": " London Designer Outlet, Unit 24, Wembley Park Boulevard, HA9 0QL",
+            "phone": "020 8904 4311",
+            "description": "Your source for the latest fan apparel, training equipment, and expert advice on all things sports.",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Brent Community Arts Centre",
+            "address": "3 Preston Road, Wembley, HA9 8NF",
+            "phone": "020 8456 3391",
+            "description": "A vibrant hub for art exhibitions, workshops, and classes celebrating local creativity.",
+            "membershipLevel": "NP Membership (Non-profit)"
+        }
+    ]
+}
