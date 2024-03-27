@@ -204,7 +204,12 @@ iframe  {
 
 section.dark img{
     background-color: rgba(255, 255, 255, .4);
-    border-radius: 1.5rem;
+    border-radius: 1.6rem;
+}
+
+section img{
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 1.6rem;
 }
 
 #weatherInfo {

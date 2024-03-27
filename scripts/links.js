@@ -13,11 +13,8 @@ const displayLinks = (weeks) => {
         let content = `${week.week}: `;
 
         week.links.forEach((link) => {
-            content += `<a href="${link.url}">${link.title}</a> | `;
+            content += `[<a href="${link.url}">${link.title}</a>] `;
         });
-        
-        // Remove any remaining "|" character from the content string 
-        content = content.slice(0, content.length - 2);
 
         li.innerHTML = content;
         document.querySelector('ul').appendChild(li);
