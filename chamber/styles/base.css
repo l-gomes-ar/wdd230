@@ -382,68 +382,67 @@ legend {
     margin: 1rem auto;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+}
 
-    div {
-        padding: 1rem;
-        box-shadow: 2px 3px 10px black;
-        border-radius: 5px;
-    
-        p.description {
-            font-style: italic;
-            text-align: right;
-            margin: 1rem 0;
-        }
-    
-        p {
-            text-align: left;
-            margin-bottom: .5rem;
-        }
+.directory.grid div {
+    padding: 1rem;
+    box-shadow: 2px 3px 10px black;
+    border-radius: 5px;
+}
 
-        p.address::before {
-            content: "Address: ";
-            font-weight: 700;
-        }
+.directory.grid div p.description {
+    font-style: italic;
+    text-align: right;
+    margin: 1rem 0;
+}
 
-        p.phone::before {
-            content: "Phone Number: ";
-        }
+.directory.grid div p {
+    text-align: left;
+    margin-bottom: .5rem;
+}
 
-        p.membership::before {
-            content: "Membership Level: ";
-        }
+.directory.grid div p.address::before {
+    content: "Address: ";
+    font-weight: 700;
+}
 
-        p.address::before,
-        p.phone::before,
-        p.membership::before {
-            font-weight: 700;
-        }
-    }
+.directory.grid div p.phone::before {
+    content: "Phone Number: ";
+}
+
+.directory.grid div p.membership::before {
+    content: "Membership Level: ";
+}
+
+.directory.grid div p.address::before,
+.directory.grid div p.phone::before,
+.directory.grid div p.membership::before {
+    font-weight: 700;
 }
 
 .directory.list {
     text-align: left;
     margin: 1rem auto;
+}
 
-    h2,
-    p {
-        font-weight: 400;
-        font-family: var(--paragraph-font);
-        font-size: 14pt;
-        margin: .5rem 0;
-    }
+.directory.list h2,
+.directory.list p {
+    font-weight: 400;
+    font-family: var(--paragraph-font);
+    font-size: 14pt;
+    margin: .5rem 0;
+}
 
-    p.description {
-        display: none;
-    }
+.directory.list p.description {
+    display: none;
+}
 
-    div {
-        padding: .5rem;
-    }
-    
-    div:nth-child(odd) {
-        background-color: rgb(206, 242, 255);
-    }
+.directory.list div {
+    padding: .5rem;
+}
 
+.directory.list div:nth-child(odd) {
+    background-color: rgb(206, 242, 255);
 }
 
 

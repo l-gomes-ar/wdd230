@@ -79,15 +79,13 @@
         }
     }
 
-    .directory.list {
-        div {
-            display: flex;
-            justify-content: space-between;
-        }
-    
-        div p,
-        div h2 {
-            width: 150px;
-        }
+    .directory.list div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .directory.list div p,
+    .directory.list div h2 {
+        width: 150px;
     }
 }
