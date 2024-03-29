@@ -27,7 +27,7 @@
         gap: 1rem;
     }
 
-    .grid-container-directory {
+    .grid-container-discover {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 1rem;
@@ -76,6 +76,18 @@
         50% {
             opacity: .6;
             width: 95%
+        }
+    }
+
+    .directory.list {
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        div p,
+        div h2 {
+            width: 150px;
         }
     }
 }

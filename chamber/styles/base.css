@@ -272,7 +272,7 @@ aside p {
     padding: .5rem;
 }
 
-.grid-container-directory {
+.grid-container-discover {
     margin: 1rem 0;
 }
 
@@ -375,4 +375,96 @@ legend {
     text-align: left;
     margin-bottom: 100%;
     border-radius: 10px;
+}
+
+.directory.grid {
+    display: grid;
+    margin: 1rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+
+    div {
+        padding: 1rem;
+        box-shadow: 2px 3px 10px black;
+        border-radius: 5px;
+    
+        p.description {
+            font-style: italic;
+            text-align: right;
+            margin: 1rem 0;
+        }
+    
+        p {
+            text-align: left;
+            margin-bottom: .5rem;
+        }
+
+        p.address::before {
+            content: "Address: ";
+            font-weight: 700;
+        }
+
+        p.phone::before {
+            content: "Phone Number: ";
+        }
+
+        p.membership::before {
+            content: "Membership Level: ";
+        }
+
+        p.address::before,
+        p.phone::before,
+        p.membership::before {
+            font-weight: 700;
+        }
+    }
+}
+
+.directory.list {
+    text-align: left;
+    margin: 1rem auto;
+
+    h2,
+    p {
+        font-weight: 400;
+        font-family: var(--paragraph-font);
+        font-size: 14pt;
+        margin: .5rem 0;
+    }
+
+    p.description {
+        display: none;
+    }
+
+    div {
+        padding: .5rem;
+    }
+    
+    div:nth-child(odd) {
+        background-color: rgb(206, 242, 255);
+    }
+
+}
+
+
+div.settings {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+button[id="grid"],
+button[id="list"] {
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: .5rem;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+button[id="grid"]:hover,
+button[id="list"]:hover {
+    background-color: rgb(216, 216, 216);
 }
