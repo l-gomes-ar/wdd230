@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.webp" alt="Wembley Chamber of Commerce Logo" width="100" height="100">
+        <img src="images/logo150x150.webp" alt="Wembley Chamber of Commerce Logo" width="100" height="100">
         <h1>Wembley <span>Chamber of Commerce</span></h1>
         <button id="menuBtn">☰</button>
     </header>
@@ -33,26 +33,26 @@
             <div class="hero-container">
                 <picture>
                     <source media="(max-width: 910px)" srcset="images/hero-small.webp">
-                    <img src="images/hero.webp" alt="Wembley Stadium Entrance" width="947" height="497">
+                    <img src="images/hero-large.webp" alt="Aerial photograph of Wembley, London in December 2016. Cmglee, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons" width="900" height="601">
                 </picture>
                 <a href="join.html" id="call-action">Join the Chamber</a>
             </div>
             <section id="current-events">
-                <h2>Current Events</h2>
-                <h3>Placeholder information</h3>
-                <p>placeholder info on event</p>
-                <p>Location and time of event</p>
-                <a href="#">more info...</a>
+                <h2>Attractions Nearby</h2>
+                <h3>Wembley Stadium</h3>
+                <p>Wembley Stadium is a legendary venue and a symbol of English sporting and entertainment excellence.</p>
+                <a href="discover.html">more info...</a>
             </section>
             <section id="weather-card">
-                <h2>Weather</h2>
-                <p>Placeholder Information</p>
-                <p>Placeholder Information</p>
-                <p>Wembley - London, England - UK</p>
+                <h2>Current Weather</h2>
+            </section>
+            <section id="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-card"></div>
             </section>
         </div>
         <section id="spotlights">
-            <h2>Spotlights</h2>
+            <h2>Member Spotlights</h2>
             <div class="flex-container">
                 <section>
                     <h3>Member Spotlight 1</h3>
@@ -81,7 +81,7 @@
     <footer>
         <div id="contact-information">
             <div id="address-info">
-                <img src="images/logo.webp" alt="Wembley Chamber of Commerce Logo" width="150" height="150">
+                <img src="images/logo.webp" alt="Wembley Chamber of Commerce Logo" width="150" height="150" loading="lazy">
                 <div>
                     <p>Wembley Chamber of Commerce</p>
                     <p>000 High Road, Wembley HA9 0XX</p>
@@ -102,5 +102,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/weatherInfo.js"></script>
 </body>
 </html>

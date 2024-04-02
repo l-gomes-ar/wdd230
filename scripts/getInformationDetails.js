@@ -23,7 +23,7 @@ async function apiFetch(url) {
 
 function displayResults(data) {
     const para = document.createElement('p');
-    para.textContent = `${data.main.temp}°C - ${data.weather[0].main}`;
+    para.textContent = `${Math.round(data.main.temp)}°C - ${data.weather[0].main}`;
 
     const weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`);

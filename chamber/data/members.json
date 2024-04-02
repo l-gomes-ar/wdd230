@@ -48,6 +48,76 @@
             "phone": "020 8456 3391",
             "description": "A vibrant hub for art exhibitions, workshops, and classes celebrating local creativity.",
             "membershipLevel": "NP Membership (Non-profit)"
+        },
+        {
+            "name": "The Wembley Wardrobe",
+            "address": "15 High Road, Wembley, HA9 7AF",
+            "phone": "020 8903 6543",
+            "description": "Discover pre-loved designer fashion and unique vintage finds at affordable prices.",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Empire IT Solutions",
+            "address": "20 Empire Way, Wembley, HA9 0PD",
+            "phone": "020 8765 2210",
+            "description": "Your trusted partner for IT support, software solutions, and tech repairs.",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Kidz Corner Daycare",
+            "address": "10 Park Lane, Wembley, HA9 7RQ",
+            "phone": "020 8654 9812",
+            "description": "Offering a nurturing and stimulating environment where your little ones will learn and play.",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "The Barking Lot",
+            "address": "56 Preston Road, Wembley, HA9 8NJ",
+            "phone": "020 8905 5432",
+            "description": "Professional dog walking, pet grooming, and quality pet supplies in the heart of Wembley.",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Clean Sweep",
+            "address": "Unit 3, Wembley Business Park, Engineers Way, HA9 0PD",
+            "phone": "020 8832 1222",
+            "description": "Reliable and efficient commercial and domestic cleaning services throughout the Wembley area.",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "The Travel Bug",
+            "address": "5 London Designer Outlet, Wembley Park Boulevard, HA9 0QL",
+            "phone": "020 3544 8765",
+            "description": "Let us help plan your dream vacation, from flights and accommodation to bespoke itineraries.",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "The Green Thumb",
+            "address": "45 Ealing Road, Wembley, HA0 4TL",
+            "phone": "020 8909 2121",
+            "description": "Transform your garden with our landscaping services, plant expertise, and beautiful garden supplies.",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Wembley Auto Centre",
+            "address": "8 Fulton Road, Wembley, HA9 0TF",
+            "phone": "020 8455 6789",
+            "description": "Expert car servicing, MOTs, and repairs to keep your vehicle running smoothly.",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "The Tutoring Tree",
+            "address": "32 Olympic Way, Wembley, HA9 0GE",
+            "phone": "020 8433 3221",
+            "description": "Personalized tutoring for all ages and subjects, helping students reach their full potential.",
+            "membershipLevel": "NP Membership (Non-profit)"
+        },
+        {
+            "name": "The Wembley Pantry",
+            "address": "2 Wembley Central Square, Wembley HA9 0HB",
+            "phone": "020 8222 8376",
+            "description": "Your local source for fresh produce, specialty foods, and delicious ready-made meals.",
+            "membershipLevel": "Silver"
         }
     ]
 }
