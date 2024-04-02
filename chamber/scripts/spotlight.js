@@ -10,7 +10,6 @@ async function fetchApi(url) {
 
 function displayData(companies) {
     const companiesSilverGold = companies.filter((company) => company.membershipLevel === 'Silver' || company.membershipLevel === 'Gold');
-    console.log(companiesSilverGold);
 
     let randomList = [];
 

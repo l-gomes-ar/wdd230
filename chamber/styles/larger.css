@@ -94,4 +94,8 @@
     .directory.list div h2 {
         width: 150px;
     }
+
+    .join h2 {
+        grid-column: 1 / 3;
+    }
 }

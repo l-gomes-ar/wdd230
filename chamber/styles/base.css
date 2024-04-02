@@ -14,6 +14,7 @@
 
 * {
     box-sizing: border-box;
+    line-height: 1.3rem;
 }
 
 body {
@@ -188,10 +189,16 @@ section[id="weather-forecast"] {
     background-color: rgba(3, 3, 3, 0.808);
 }
 
-#spotlights section {
-    background-color: #C79F72;
-    margin: 1rem;
+.join {
+    background-color: var(--primary-color);
     padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 15px;
+}
+
+.join h2 {
+    margin: 1.5rem 0;
+    font-size: 28pt;
 }
 
 #spotlights h2 {
@@ -330,6 +337,7 @@ form {
     border: 1px solid var(--secondary-color);
     border-radius: 3px;
     margin-bottom: 1rem;
+    background-color: white;
 }
 
 fieldset {
@@ -375,11 +383,6 @@ input:not(input[type="radio"]):not(input[type="submit"]) {
     border: 2px solid red;
     border-radius: 5px;
     outline: none;
-}
-
-.join-us {
-    font-size: 28pt;
-    margin: 1.5rem 0 1rem;
 }
 
 input[type="submit"] {
@@ -534,4 +537,36 @@ button[id="list"] {
 button[id="grid"]:hover,
 button[id="list"]:hover {
     background-color: rgb(216, 216, 216);
+}
+
+.banner {
+    display: none;
+}
+
+.banner.open {
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    background-color: var(--accent1-color);
+    margin-top: 1rem;
+    position: relative;
+}
+
+.banner p {
+    padding: 1.5rem;
+}
+
+.banner span {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: 1px solid white;
+    padding: 11px 14px;
+    font-weight: 700;
+}
+
+.banner span:hover {
+    background-color: rgba(255, 255, 255, .3);
+    cursor: pointer;
 }
