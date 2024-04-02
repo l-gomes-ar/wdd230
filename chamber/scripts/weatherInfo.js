@@ -45,7 +45,7 @@ function displayForecast(data) {
     const date2 = new Date(forecastDay2[0].dt_txt);
 
     const forecastDay3 = data.list.filter((item) => new Date(item.dt_txt).toLocaleDateString() === new Date(Number(Date.now()) + (8.64e+7) * 3).toLocaleDateString());
-    const temperaturesDay3 = forecastDay2.map((item) => item.main.temp);
+    const temperaturesDay3 = forecastDay3.map((item) => item.main.temp);
     const date3 = new Date(forecastDay3[0].dt_txt);
 
     const forecastArray = [
