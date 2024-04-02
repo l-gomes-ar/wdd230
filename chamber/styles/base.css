@@ -113,7 +113,7 @@ main {
     text-align: center;
 }
 
-#call-action {
+a[id="call-action"] {
     display: block;
     padding: 1rem;
     text-decoration: none;
@@ -126,6 +126,10 @@ main {
     text-align: center;
     width: 100%;
     top: 2rem;
+}
+
+a[id="call-action"]:hover {
+    background-color: var(--accent2-color);
 }
 
 section[id="current-events"],
